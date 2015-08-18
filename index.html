@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	
+	<header>
+		<div class="logo"><img src="img/logo.png"></div>
+		<div class="bars"><i class="fa fa-bars fa-2x"></i></div>
+		<ul id="nav">
+			<li><a href="">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Services</a></li>
+			<li><a href="">Ourwork</a></li>
+			<li><a href="">Contact</a></li>
+		</ul>
+	</header>
+
+	<main>
+			<div class="mainImg">
+				<!-- <div class="mainImege"><img src="img/header.jpg"></div> -->
+			</div>
+			<div class="aboutUs">
+				<div class="info1"><h1>About US</h1><p> Alex has an MBA (with distinction) from Massey University that he completed in 1997, and an earlier degree, a BSurv (Bachelor of Land Surveying) from the University of Otago (1982).</p>
+				</div>
+
+				<div class="info2"><h1>Why choose us</h1><p> Lorem ipsum dolor sit amet, quo meis audire placerat eu, te eos porro veniam. An everti maiorum detracto mea. Eu eos dicam voluptaria, erant bonorum albucius et per, ei sapientem accommodare est.</p>
+				</div>
+			</div>
+			<div class="ourSer"><h1 id="white">Our Services</h1>
+				<div class="wrap">
+					<div class="coment"><img class="services" src="img/coment1.jpg"><p id="serv">At NetInsites we know that using the Internet effectively is more than using a Designer to put together a Website.</p></div>
+
+					<div class="coment"><img class="services" src="img/pay.jpg"><p id="serv">Your e-commerce site will be based on OpenCart an open source e-commerce system.</p></div>
+
+					<div class="coment"><img class="services" src="img/web.jpg"><p id="serv">We design and build highly effective Website solutions for our clients.</p></div>
+
+					<div class="coment"><img class="services" src="img/market.jpg"><p id="serv">We design and build highly effective Website solutions for our clients.</p></div>
+				</div>
+			</div>
+			<div class="ourWork">
+				<h1>Our Work</h1>
+					<div class="wrap1">
+						<div class="work"><img id="work" src="img/work1.jpg"></div>
+						<div class="work margin-left"><img id="work" src="img/work2.jpg"></div>
+						<div class="work"><img id="work" src="img/work3.jpg"></div>
+						<div class="work margin-left"><img id="work" src="img/work4.jpg"></div>
+					</div>
+			</div>
+			<div class="contact">
+				<h1 id="white">Contact Us</h1>
+					<p id="contact"> Alex Garden Phone: 64 9 273 6094 Mobile: 64 21 676 965 Address: 81 Westerham Drive, Dannemora<br><br>Natalie Pike Mobile: 64 21 495 766</p>
+			</div>
+	</main>
+
+	<footer>
+		<p>Copyright © 2015 Ascend. Design by <br> KirilZhelyazkov</p>
+		<div class="icon">
+			<i class="fa fa-facebook-official fa-2x fat"></i>
+			<i class="fa fa-twitter-square fa-2x fat"></i>
+			<i class="fa fa-instagram fa-2x fat"></i>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+	var bars = document.querySelector(".bars");
+	var nav = document.querySelector("#nav");
+
+	bars.onclick = function(){
+		if(nav.className == ""){
+			nav.className = "show";
+		}else{
+			nav.className = "";
+		}
+	}
+	</script>
+
+</body>
+</html>

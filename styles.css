@@ -1,0 +1,395 @@
+*
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*================================================*/
+
+/*All devices and mobile phone*/
+
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	max-width: 120em;
+}
+
+header{
+	flex: 0 0 content;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+}
+
+.logo{
+	flex: 0 0 9em;
+	height: 4.5em;
+	text-align: center;
+}
+
+.logo img{
+	width: 100%;
+	margin-top: 1em;
+}
+
+.bars{
+	flex: 0 0 3em;
+	height: 2.5em;
+	text-align: center;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.1);
+	margin-top: 1.2em;
+}
+
+.bars i{
+	line-height: 1.3em;
+}
+
+#nav {
+	flex:1 1 100%;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(0,0,0,0.1);
+	overflow: hidden;
+	transition: all 0.5s ease;
+	list-style-type: none;
+}
+
+#nav.show{
+	height: 10em;
+}
+
+#nav li{
+	height: 2em;
+}
+#nav li a{
+	display: block;
+	text-align: center;
+	line-height: 2em;
+	color: black;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.mainImg{
+	flex: 0 0 41em;
+	background-image: url(img/header1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+.aboutUs{
+	flex:0 0 100%;
+	width: auto;
+	background-color: rgba(0,0,0,0);
+	color: #555;
+}
+
+h1{
+	font-weight: 100;
+	color: #555;
+	width: 100%;
+	text-align: center;
+	/*margin-left: 1em;*/
+}
+
+#white{
+	color: white;
+}
+
+p{
+	line-height: 26px;
+	/*margin-bottom: 20px;*/
+	color: #666;
+}
+
+.ourSer{
+	display: flex;
+	flex-wrap:wrap;
+	flex: 0 0 content;
+	background-color: #33B0C6;
+}
+
+.wrap{
+	/*display: flex;*/
+	/*flex-wrap:wrap;*/
+	flex: 0 0 content;
+	max-width:15em; 
+	margin:auto;
+}
+
+.coment{
+	flex: 0 0 13em;
+	/*margin-left: 1em;*/
+}
+
+.services{
+	width: 100%;
+}
+
+#serv{
+	color: white;
+}
+
+.ourWork{
+	display: flex;
+	flex-wrap:wrap;
+	flex: 0 0 content;
+	margin-top: 2em;
+}
+
+.wrap1{
+	flex: 0 0 content;
+	max-width:16em; 
+	margin:auto;
+}
+
+.work{
+	flex: 0 0 15em;
+	margin-bottom: 1em;
+	box-shadow: 5px 5px 10px grey;
+}
+
+#work{
+	width: 100%;
+}
+
+.contact{
+	flex: 0 0 content;
+	background-color: #33B0C6;
+}
+
+#contact{
+	margin-left: 1em;
+	color: white;
+}
+
+footer{
+	flex:0 0 contact;
+	margin-top: 1em;
+	background-color: black;
+}
+
+footer p {
+	text-align: center;
+}
+
+.fat{
+	background-color: #666;
+}
+
+.icon{
+	text-align: center;
+}
+
+
+/*for phablet - inclusive*/
+@media only screen and (min-width : 24em) {
+
+	.wrap{
+		text-align: center;
+	}
+
+	.ourSer{
+		display: flex;
+		flex-wrap:wrap;
+		flex: 0 0 100%;
+		background-color: #33B0C6;
+	}
+
+	.wrap{
+		display: flex;
+		flex-wrap:wrap;
+		flex: 0 0 100%;
+		max-width: none; 
+		/*margin:auto;*/
+	}
+
+	.coment{
+		flex: 0 0 40%;
+		margin: 0 5% 5%;
+	}
+
+	.ourWork{
+		display: flex;
+		flex-wrap:wrap;
+		flex: 0 0 100%;
+		margin-top: 2em;
+	}
+
+	.wrap1{
+		display: flex;
+		flex-wrap:wrap;
+		flex: 0 0 content;
+		max-width: none; 
+		/*margin:auto;*/
+	}
+
+	.work{
+		flex: 0 0 40%;
+		margin-bottom: 1em;
+		box-shadow: 5px 5px 10px grey;
+		margin: 0 5% 5%;
+	}
+
+
+	#contact{
+		margin-left: 0;
+		color: white;
+		text-align: center;
+	}
+	
+	/**{
+		outline: 1px solid green;
+	}*/
+}
+
+/*for tablet - inclusive*/
+@media only screen and (min-width : 44em) {
+
+	/**{
+		outline: 1px solid blue;
+	}*/
+
+	.bars{
+		display: none;
+	}
+
+	#nav{
+		margin-top: 1.5em;
+		margin-left: 1em;
+		flex:1 0 50%;
+		height: 2em;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.wrap{
+		max-width: 40em; 
+	}
+
+
+}
+
+
+/*for destop - inclusive*/
+@media only screen and (min-width : 64em) {
+
+/*	*{
+		outline: 1px solid red;
+	}*/
+
+	#nav{
+		margin-left: 1em;
+		background-color: rgba(0,0,0,0);
+		flex:0 0 80%;
+		justify-content: flex-end;
+	}
+
+	#nav li{
+		height: 2em;
+		width: auto;
+		margin-right: 2em;
+	}
+
+	.wrap{
+		display: flex;
+		flex-wrap:wrap;
+		flex: 0 0 100%;
+		max-width: none; 
+		/*margin:auto;*/
+	}
+
+	.coment{
+		flex: 0 0 20%;
+		margin: 0 2% 2%;
+	}
+
+	.aboutUs{
+		display: flex;
+		flex-wrap:wrap;/*
+		flex:0 0 100%;*/
+		max-width: 100%;
+		background-color: rgba(0,0,0,0);
+		color: #555;
+	}
+
+	.info1, .info2{
+		flex: 1 0 40%;
+	}
+
+	.info1{
+		margin-left: 3%;
+	}
+
+	.info2{
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.wrap1{
+		display: flex;
+		flex-wrap:wrap;
+		flex: 0 0 content;
+		max-width: none; 
+		/*margin:auto;*/
+	}
+
+	.work{
+		flex: 0 0 23%;
+		margin-bottom: 1em;
+		box-shadow: 5px 5px 10px grey;
+		margin: 0 1% 3%;
+	}
+
+}
